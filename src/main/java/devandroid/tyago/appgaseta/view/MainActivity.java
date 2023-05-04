@@ -69,8 +69,8 @@ public class MainActivity extends AppCompatActivity {
         editTelefoneContato.setText(pessoa.getTelefoneContato());
 
         btnFinalizar = findViewById(R.id.btnFinalizar);
-        btnLimpar = findViewById(R.id.btnLimpar);
-        btnSalvar = findViewById(R.id.btnSalvar);
+       // btnLimpar = findViewById(R.id.btnLimpar);
+        btnSalvar = findViewById(R.id.btnSalvarc);
 
         //Adapter
         //Layout
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
         spinner.setAdapter(adapter);
 
 
-        btnLimpar.setOnClickListener(new View.OnClickListener() {
+       /* btnLimpar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 editPrimeiroNome.setText("");
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
 
 
             }
-        });
+        });*/
 
      /*   btnFinalizar.setOnClickListener(new View.OnClickListener() {
             @Override
