@@ -25,8 +25,4 @@ public class UtilGasEta {
 
 
     }
-
-    public static String mensagemn() {
-        return "Novo ";
-    }
 }
