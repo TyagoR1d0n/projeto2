@@ -95,13 +95,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnFinalizar.setOnClickListener(new View.OnClickListener() {
+     /*   btnFinalizar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this, "Volte Sempre", Toast.LENGTH_LONG).show();
                 finish();
             }
-        });
+        });*/
         btnSalvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
