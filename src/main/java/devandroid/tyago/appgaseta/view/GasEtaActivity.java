@@ -105,6 +105,7 @@ public class GasEtaActivity extends AppCompatActivity {
                     precoEtanol = Double.parseDouble(editEtanol.getText().toString());
                     recomendacao = UtilGasEta.calcularMelhorOpcao(precoGasolina,precoEtanol);
                     txtResultado.setText(recomendacao);
+                   btnSalvarc.setEnabled(true);
 
                 } else {
                     Toast.makeText(GasEtaActivity.this, "Por favor digite os dados obrigatórios"
