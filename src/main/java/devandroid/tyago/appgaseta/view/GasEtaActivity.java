@@ -18,6 +18,7 @@ import devandroid.tyago.appgaseta.model.Combustivel;
 
 public class GasEtaActivity extends AppCompatActivity {
 
+
     Combustivel combustivelGasolina;
     Combustivel combustivelEtanol;
     EditText editGasolina;
@@ -59,6 +60,7 @@ public class GasEtaActivity extends AppCompatActivity {
             }
         });
 
+
         btnSalvarc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,8 +71,8 @@ public class GasEtaActivity extends AppCompatActivity {
                 combustivelGasolina.setPrecoDoCombustivel(precoGasolina);
                 combustivelEtanol.setNomeDoCombustivel("Etanol");
                 combustivelEtanol.setPrecoDoCombustivel(precoEtanol);
-                combustivelGasolina.setRecomendacao(UtilGasEta.calcularMelhorOpcao(precoGasolina,precoEtanol));
-                combustivelEtanol.setRecomendacao(UtilGasEta.calcularMelhorOpcao(precoGasolina,precoEtanol));
+                combustivelGasolina.setReComendacao(UtilGasEta.calcularMelhorOpcao(precoGasolina,precoEtanol));
+                combustivelEtanol.setReComendacao(UtilGasEta.calcularMelhorOpcao(precoGasolina,precoEtanol));
 
                 int parada = 0;
 

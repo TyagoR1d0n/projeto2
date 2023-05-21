@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import devandroid.tyago.appgaseta.R;
+import devandroid.tyago.appgaseta.database.GasEtaDB;
 
 public class SplachActivity extends AppCompatActivity {
 
@@ -26,7 +27,7 @@ public class SplachActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-
+                GasEtaDB db = new GasEtaDB(SplachActivity.this);
                 Intent telaPrincipal = new Intent(SplachActivity.this, GasEtaActivity.class);
                 startActivity(telaPrincipal);
                 finish();

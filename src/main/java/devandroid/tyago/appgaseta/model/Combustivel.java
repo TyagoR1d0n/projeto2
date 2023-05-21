@@ -5,7 +5,7 @@ public class Combustivel {
     private int id;
     private String nomeDoCombustivel;
     private double precoDoCombustivel;
-    private String recomendacao;
+    private String reComendacao;
 
     public int getId() {
         return id;
@@ -31,11 +31,11 @@ public class Combustivel {
         this.precoDoCombustivel = precoDoCombustivel;
     }
 
-    public String getRecomendacao() {
-        return recomendacao;
+    public String getReComendacao() {
+        return reComendacao;
     }
 
-    public void setRecomendacao(String recomendacao) {
-        this.recomendacao = recomendacao;
+    public void setReComendacao(String reComendacao) {
+        this.reComendacao = reComendacao;
     }
 }
