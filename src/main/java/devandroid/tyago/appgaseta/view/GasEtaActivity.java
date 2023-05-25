@@ -10,9 +10,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentController;
 
 import devandroid.tyago.appgaseta.R;
 import devandroid.tyago.appgaseta.apoio.UtilGasEta;
+import devandroid.tyago.appgaseta.controller.CombustivelController;
 import devandroid.tyago.appgaseta.model.Combustivel;
 
 
@@ -25,6 +27,7 @@ public class GasEtaActivity extends AppCompatActivity {
     EditText editEtanol;
     TextView txtResultado;
 
+    CombustivelController controller;
     Button btnCalcular;
     Button btnLimparc;
     Button btnSalvarc;
@@ -35,7 +38,6 @@ public class GasEtaActivity extends AppCompatActivity {
     String recomendacao;
     UtilGasEta utilGasEta;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,12 +47,11 @@ public class GasEtaActivity extends AppCompatActivity {
         editEtanol = findViewById(R.id.editEtanol);
         editGasolina = findViewById(R.id.editGasolina);
         txtResultado = findViewById(R.id.txtResultado);
-
         btnLimparc = findViewById(R.id.btnLimparc);
         btnSalvarc = findViewById(R.id.btnSalvarc);
         btnCalcular = findViewById(R.id.btnCalcular);
         btnFinalizar = findViewById(R.id.btnFinalizar);
-
+        controller.deletar(1);
         btnLimparc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
